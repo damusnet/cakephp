@@ -30,4 +30,4 @@
 <?php echo $this->Html->scriptBlock('$("input.focus:last").focus();'); ?>
 <?php echo $this->Html->script('openid-jquery'); ?>
 <?php echo $this->Html->script('openid-fr'); ?>
-<?php echo $this->Html->scriptBlock('$(document).ready(function() { openid.img_path = "../img/"; openid.init("data[Openids][identifier]"); $("#openid_choice").show(); });'); ?>
+<?php echo $this->Html->scriptBlock('$(document).ready(function() { openid.init("data[Openids][identifier]"); });'); ?>
