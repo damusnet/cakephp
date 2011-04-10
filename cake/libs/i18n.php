@@ -167,7 +167,7 @@ class I18n extends Object {
 			$header = $_this->__domains[$domain][$_this->__lang][$_this->category]["%plural-c"];
 			$plurals = $_this->__pluralGuess($header, $count);
 		} else {
-			if ($count != 1) {
+			if (abs($count) > 1) {
 				$plurals = 1;
 			} else {
 				$plurals = 0;
